@@ -244,21 +244,29 @@ footer {
   color: #757575;
   background: #000;
   cursor: pointer;
-  padding: 0.75rem 1.625rem;
+  padding: 0.75rem 2.625rem;
   font-size: 1rem;
   -webkit-appearance: none;
+  /* border: none; */
   position: relative;
 }
 .footer__select {
   position: relative;
   display: inline-block;
+  width: 155px;
+  /* border: 1px solid #fff; */
 }
-.footer__select::after {
-  content: "\e252";
+.footer__select .fa {
   position: absolute;
-  top: 10px;
-  right: 15px;
-  color: #fff;
+  z-index: 1;
+  top: 13px;
+  pointer-events: none;
+}
+.footer__select .fa-globe {
+  left: 13px;
+}
+.footer__select .fa-caret-down {
+  right: 20px;
 }
 
 /* BIgger screen for Ipad */
@@ -339,6 +347,7 @@ footer {
   .showcase img {
     width: 134px;
   }
+  /* Form for Desktop */
   h3 {
     font-size: 1.2rem;
     order: 2;
@@ -358,6 +367,45 @@ footer {
     min-width: 500px;
     height: 60px;
   }
+  /* Intro for Desktop */
+  .title {
+    font-size: 3.125rem;
+    text-align: left;
+    max-width: 650px;
+  }
+  .subtitle {
+    font-size: 1.625rem;
+    text-align: left;
+    max-width: 650px;
+  }
+  .intro__item {
+    /* width: 80%; */
+    /* margin: 0 auto; */
+    /* padding: 4.375rem 10%; */
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .intro__item img {
+    max-width: 400px;
+    width: 80%;
+  }
+  .order {
+    order: -1;
+  }
+  /* Question for Desktop */
+  .question__list {
+    margin: 3.25rem 0;
+    font-size: 1.625rem;
+  }
+  .tabs__item {
+    padding: 1.95rem;
+    height: 75px;
+  }
+  .answer__hide,
+  .answer__show {
+    padding: 1.95rem;
+  }
+  /* footer for Desktop */
   footer {
     margin: 0 auto;
     width: 85%;
