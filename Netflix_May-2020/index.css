@@ -89,7 +89,7 @@ footer a:focus {
 }
 .btn-lg {
   font-size: 1rem;
-  padding: 0.35rem 1rem 0.35rem 1rem;
+  padding: 0.35rem 1rem;
   min-height: 44px;
 }
 /* HEADER (showcase) */
@@ -143,6 +143,9 @@ footer a:focus {
   align-items: center;
   z-index: 2;
 }
+.form__section {
+  text-align: center;
+}
 .input-text {
   width: 100%;
   max-width: 500px;
@@ -195,22 +198,17 @@ footer a:focus {
   cursor: pointer;
 }
 .answer__show {
-  text-align: left;
-  padding: 0 5%;
-  border-top: 1px solid #000;
-  padding: 1.35rem;
-  display: block;
+  display: block !important;
 }
 .answer__hide {
   text-align: left;
-  padding: 0 5%;
   border-top: 1px solid #000;
   padding: 1.35rem;
   /* hide by default */
   display: none;
 }
 .rotate {
-  /* transform: rotate(45deg); */
+  transform: rotate(45deg);
 }
 
 /* FOOTER */
@@ -401,8 +399,7 @@ footer {
     padding: 1.95rem;
     height: 75px;
   }
-  .answer__hide,
-  .answer__show {
+  .answer__hide {
     padding: 1.95rem;
   }
   /* footer for Desktop */
