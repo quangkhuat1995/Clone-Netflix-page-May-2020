@@ -349,6 +349,8 @@ footer {
   h3 {
     font-size: 1.2rem;
     order: 2;
+    margin: 0;
+    padding: 0;
   }
   .form__section {
     display: flex;
